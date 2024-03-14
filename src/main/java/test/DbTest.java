@@ -10,6 +10,7 @@ class DbTest {
 	public void test() {
 		TestdbConnection testdbConnection = new TestdbConnection();
 		testdbConnection.selectData();
+	
 	}
 
 }
