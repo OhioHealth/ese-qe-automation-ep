@@ -13,5 +13,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="C:/Users/mxv082/Downloads/commons-net-3.10.0-bin/commons-net-3.10.0/commons-net-3.10.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mxv082/Downloads/jsch-0.1.72.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
