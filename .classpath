@@ -13,5 +13,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="C:/Users/mxv082/Downloads/gson-2.10.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mxv082/Downloads/json-20230618.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
