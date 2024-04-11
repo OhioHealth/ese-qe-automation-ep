@@ -25,8 +25,8 @@ public class TwilioApivalidate {
             connection.setRequestMethod("GET");
 
             // Set request headers for authentication
-            connection.setRequestProperty("Client-Id", client_Id);
-            connection.setRequestProperty("api-secret", api_secret);
+            connection.setRequestProperty("client_Id", client_Id);
+            connection.setRequestProperty("api_secret", api_secret);
            // connection.setRequestProperty("Cert-Id", twilio_cert);
 
             // Check if the response code is 200 (OK)
