@@ -6,29 +6,7 @@ import java.net.URL;
 import org.json.JSONObject;
 
 public class TwilioApicall {
-    public static void main(String[] args) {
-        try {
-            String apiUrl = "https://api-staging.ohiohealth.com/enterprise-communications/send-text-message?to=111-111-1111&message=test";
-            String clientId = " ";
-            String api_secret = "$2a$10$LNyO.EV3xEpsF9JCBO0KJeJoTyPauSJ6BFsKyLqGkKXleYAr2w1b2";
-
-            JSONObject response = callAPI(apiUrl, clientId, api_secret);
-
-            if (response != null) {
-                if (response.has("messageId")) {
-                    System.out.println("Response code: 200 OK");
-                    System.out.println("ID found in response: " + response.getString("messageId"));
-                } else {
-                    System.out.println("ID not found in response");
-                }
-            } else {
-                System.out.println("Failed to get response from the API");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
+   
     public static JSONObject callAPI(String apiUrl, String clientId, String api_secret) {
         try {
             URL url = new URL(apiUrl);
@@ -56,4 +34,6 @@ public class TwilioApicall {
             return null;
         }
     }
+
+	
 }
