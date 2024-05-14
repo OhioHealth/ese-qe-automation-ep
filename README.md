@@ -1,2 +1,2 @@
-# ep-bp-automation
-Enterprise batch process autoamtion
+# ese-qe-automation-epb
+EPbacthAutomation
