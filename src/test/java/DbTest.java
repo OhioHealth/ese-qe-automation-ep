@@ -1,10 +1,9 @@
-package test;
 
-import org.junit.jupiter.api.Test;
 
-import database.TestdbConnection;
+import org.junit.Test;
 
-class DbTest {
+
+public class DbTest {
 
 	@Test
 	public void test() {
