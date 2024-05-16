@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="AllTests" time="3.437" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="AllTests" time="1.851" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.22+9-LTS-219"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\mxv082\Documents\GitHub\ese-qe-automation-epb"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\mxv082\Documents\GitHub\ese-qe-automation-ep"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://openjdk.java.net/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,12 +16,12 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="test" value="AllTests"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\mxv082\Documents\GitHub\ese-qe-automation-epb"/>
+    <property name="user.dir" value="C:\Users\mxv082\Documents\GitHub\ese-qe-automation-ep"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="11.0.22+9-LTS-219"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\mxv082\AppData\Local\Temp\16\"/>
+    <property name="java.io.tmpdir" value="C:\Users\mxv082\AppData\Local\Temp\20\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
@@ -69,7 +69,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="TxtfileValidate" name="testTxtFileCreation" time="0.032"/>
-  <testcase classname="SFTPTest" name="testSFTPConnection" time="0.757"/>
-  <testcase classname="DbTest" name="test" time="2.648"/>
+  <testcase classname="validateTxtfile" name="testTxtFileCreation" time="0.227"/>
+  <testcase classname="sftpTest" name="testSftpConnection" time="0.672"/>
+  <testcase classname="dbTest" name="selectData" time="0.952"/>
 </testsuite>
