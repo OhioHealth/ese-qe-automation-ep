@@ -9,7 +9,7 @@ public class createTxtfile {
 
     public static void main(String[] args) {
     	
-    	ConfigReader.readConfig("InputConfig.json");
+    	ConfigReader.readConfigdata("InputConfig.json");
 		String localFileName= ConfigReader.getTextFilename();
 	
         String textFile = localFileName;

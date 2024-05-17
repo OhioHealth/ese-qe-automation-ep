@@ -21,7 +21,7 @@ public class ConfigReader {
     private static String dbConnectionurl;
     private static String dbPassword;
 
-    public static void readConfig(String filePath) {
+    public static void readConfigdata(String filePath) {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             // Read JSON file

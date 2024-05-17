@@ -18,7 +18,7 @@ public class sftpConnection {
 
 
    
-   public static void pushFile(String host, String username, String password,String localFileName,String remoteFilePath,int SFTP_PORT ) {
+   public static void pushFiletotestserver(String host, String username, String password,String localFileName,String remoteFilePath,int SFTP_PORT ) {
 
 		
 		

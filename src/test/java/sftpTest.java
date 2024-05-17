@@ -9,7 +9,7 @@ public class sftpTest {
     @Test
    public void testSftpConnection() throws JSchException {
         // Replace with your actual SFTP server details
-    	ConfigReader.readConfig("InputConfig.json");
+    	ConfigReader.readConfigdata("InputConfig.json");
 		String host= ConfigReader.getSftpHost();
 		String username= ConfigReader.getSftpUsername();
 		String password= ConfigReader.getSftpPassword();
@@ -19,7 +19,7 @@ public class sftpTest {
 		
           
 
-			sftpConnection.pushFile(host, username, password,localFileName,remoteFilePath,SFTP_PORT);
+			sftpConnection.pushFiletotestserver(host, username, password,localFileName,remoteFilePath,SFTP_PORT);
 
 	
 		

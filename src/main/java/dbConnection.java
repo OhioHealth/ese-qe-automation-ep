@@ -14,7 +14,7 @@ public class dbConnection {
 			 
 			//read config values from Json file
 			
-			 ConfigReader.readConfig("InputConfig.json");
+			 ConfigReader.readConfigdata("InputConfig.json");
 			 String Connectionurl= ConfigReader.getConnectionurl();
 			 
 			// Register JDBC driver
