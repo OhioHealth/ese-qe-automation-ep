@@ -1,4 +1,5 @@
-C:\Users\mxv082\Documents\GitHub\ese-qe-automation-epb\src\main\java\SFTPConnector.java
-C:\Users\mxv082\Documents\GitHub\ese-qe-automation-epb\src\main\java\TxtfileCreate.java
-C:\Users\mxv082\Documents\GitHub\ese-qe-automation-epb\src\main\java\DbConnection.java
-C:\Users\mxv082\Documents\GitHub\ese-qe-automation-epb\src\main\java\TestdbConnection.java
+C:\Users\mxv082\Documents\GitHub\ese-qe-automation-ep\src\main\java\dbConnection.java
+C:\Users\mxv082\Documents\GitHub\ese-qe-automation-ep\src\main\java\sftpConnection.java
+C:\Users\mxv082\Documents\GitHub\ese-qe-automation-ep\src\main\java\createTxtfile.java
+C:\Users\mxv082\Documents\GitHub\ese-qe-automation-ep\src\main\java\Utilities\ConfigReader.java
+C:\Users\mxv082\Documents\GitHub\ese-qe-automation-ep\src\main\java\dbConnectionTest.java

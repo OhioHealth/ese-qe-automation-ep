@@ -1,4 +1,4 @@
-DbTest.class
-TxtfileValidate.class
+validateTxtfile.class
+sftpTest.class
+dbTest.class
 AllTests.class
-SFTPTest.class

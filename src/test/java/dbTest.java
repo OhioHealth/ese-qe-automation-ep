@@ -4,17 +4,33 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class TestdbConnection {
+import org.junit.Test;
 
-	public void selectData() {
+import Utilities.ConfigReader;
+
+
+public class dbTest {
+
+	@Test
+	//public void test() {
+	//	TestdbConnection testdbConnection = new TestdbConnection();
+	//	testdbConnection.selectData();
+	//
+	//}
+public void selectData() {
+		
+		 ConfigReader.readConfigdata("InputConfig.json");
+		 String filename= ConfigReader.getTextFilename();
 		
 		// Get the connection from DbConnection
-		Connection conn = DbConnection.getConnection();
+		
+		Connection conn = dbConnection.getConnection();
 
 		if (conn != null) {
 			try {
 				// prepare SQL query to select from table
-				String sql = "select * from txn_job_instance where job_id = 46 and status = 'COMPLETED' and  job_file_name='PEP_3dayXpilot_outgoing_110.txt'";
+				String sql = "SELECT  * FROM  txn_job_instance where job_id = 46 and status = 'COMPLETED' and job_file_name='"  + filename+"'"  ;
+				System.out.println(sql);
 				PreparedStatement statement = conn.prepareStatement(sql);
 				// Execute the query
 				ResultSet resultSet = statement.executeQuery();

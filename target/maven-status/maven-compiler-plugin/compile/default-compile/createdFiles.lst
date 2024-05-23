@@ -1,4 +1,3 @@
-TxtfileCreate.class
-DbConnection.class
-TestdbConnection.class
-SFTPConnector.class
+dbConnectionTest.class
+Utilities\ConfigReader.class
+dbConnection.class

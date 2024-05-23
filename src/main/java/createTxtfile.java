@@ -3,10 +3,16 @@
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class TxtfileCreate {
+import Utilities.ConfigReader;
+
+public class createTxtfile {
 
     public static void main(String[] args) {
-        String textFile = "PEP_3dayXpilot_outgoing_110.txt";
+    	
+    	ConfigReader.readConfigdata("InputConfig.json");
+		String localFileName= ConfigReader.getTextFilename();
+	
+        String textFile = localFileName;
         String delimiter = "|";
 
         // Sample data

@@ -1,0 +1,22 @@
+{
+  "sftp": {
+    "host": "lattsolentcom01",
+    "port": 22,
+    "username": "svcDEVUTILAUTO",
+    "password": "q@bKw2nt",
+	"remoteFilePath": "/data/batch/inbound/epic/incoming"
+	
+  },
+  "textFile": {
+    "filename": "PEP_3dayXpilot_outgoing_"
+	
+  },
+  "dbConnect": {
+    "servername": "wdttechsol01",
+    "dbname": "ent_communications",
+    "port": 1433,
+    "username": "app_ent_communications",
+    "password": "2Wsx#edc",
+	"Connectionurl": "jdbc:sqlserver://wdttechsol01:1433;DatabaseName=ent_communications;user=app_ent_communications;password=2Wsx#edc"
+  }
+}

@@ -3,7 +3,7 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ TxtfileValidate.class ,SFTPTest.class,DbTest.class })
+@SuiteClasses({ validateTxtfile.class ,sftpTest.class,dbTest.class })
 public class AllTests {
 
 }
