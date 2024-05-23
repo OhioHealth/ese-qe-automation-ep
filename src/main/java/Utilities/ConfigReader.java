@@ -77,7 +77,7 @@ public class ConfigReader {
         return textFilename;
     }
     public static class fileName {
-  	  public static final String file_Name = textFilename;
+  	  public static final String file_Name = stextFilename;
   	}
     public static String getDbServername() {
         return dbServername;
