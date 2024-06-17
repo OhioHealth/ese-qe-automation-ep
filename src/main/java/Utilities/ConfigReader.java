@@ -5,7 +5,8 @@ import com.fasterxml.jackson.databind.JsonNode;
 import java.io.File;
 import java.io.IOException;
 import java.util.Random;
-
+import java.util.ArrayList;
+import java.util.List;
 public class ConfigReader {
 
     private static String sftpHost;
@@ -14,6 +15,8 @@ public class ConfigReader {
     private static String sftpPassword;
     private static String sftpRemoteFilePath;
     private static String textFilename;
+    private static int campaignId;
+    private static List<List<String>> fileData = new ArrayList<>();
     private static String dbServername;
     private static String dbName;
     private static int dbPort;
@@ -39,6 +42,15 @@ public class ConfigReader {
             Random random= new Random();
             int randomNumber=random.nextInt(1000);
             textFilename = textFileNode.get("filename").asText()+randomNumber+".txt";
+            campaignId = textFileNode.get(campaignId).asInt();
+            JsonNode fileDataNode = textFileNode.get("fileData");
+            for (JsonNode recordNode : fileDataNode) {
+                List<String> record = new ArrayList<>();
+                for (JsonNode fieldNode : recordNode) {
+                    record.add(fieldNode.asText());
+                }
+                fileData.add(record);
+            }
 
             // Read DBConnect configuration
             JsonNode dbConnectNode = rootNode.get("dbConnect");
@@ -73,6 +85,15 @@ public class ConfigReader {
     public static String getsftpRemoteFilePath() {
         return sftpRemoteFilePath;
     }
+    
+    public static int getCampaignId() {
+        return campaignId;
+    }
+
+    public static List<List<String>> getFileData() {
+        return fileData;
+    }
+    
     public static String getTextFilename() {
         return textFilename;
     }
