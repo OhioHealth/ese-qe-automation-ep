@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: validateTxtfile
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.499 s <<< FAILURE! - in validateTxtfile
+testCreateTxtFile(validateTxtfile)  Time elapsed: 0.044 s  <<< ERROR!
+java.lang.NullPointerException
+	at validateTxtfile.testCreateTxtFile(validateTxtfile.java:29)
+

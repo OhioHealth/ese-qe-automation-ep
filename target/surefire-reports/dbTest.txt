@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: dbTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in dbTest
+selectData(dbTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at dbTest.selectData(dbTest.java:22)
+

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: sftpTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! - in sftpTest
+testSftpConnection(sftpTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at sftpTest.testSftpConnection(sftpTest.java:12)
+
