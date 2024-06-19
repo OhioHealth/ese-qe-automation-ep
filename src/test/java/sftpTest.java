@@ -1,7 +1,7 @@
 import org.junit.Test;
 import com.jcraft.jsch.JSchException;
 import Utilities.ConfigReader;
-import Utilities.ConfigReader.fileName;
+
 
 
 public class sftpTest {
@@ -13,11 +13,11 @@ public class sftpTest {
 		String host= ConfigReader.getSftpHost();
 		String username= ConfigReader.getSftpUsername();
 		String password= ConfigReader.getSftpPassword();
-		String localFileName=fileName.file_Name;;;
+		String localFileName=createTxtfile.fname;  ///fileName.file_Name;;;
 		String remoteFilePath= ConfigReader.getsftpRemoteFilePath();
 		int SFTP_PORT= ConfigReader.getSftpPort();
 		
-          
+		System.out.println("sftpTest Variable test !"+ localFileName+remoteFilePath);
 
 			sftpConnection.pushFiletotestserver(host, username, password,localFileName,remoteFilePath,SFTP_PORT);
 

@@ -20,7 +20,7 @@ public class dbTest {
 public void selectData() {
 		
 		 ConfigReader.readConfigdata("InputConfig.json");
-		 String filename= ConfigReader.getTextFilename();
+		 String filename= createTxtfile.fname ;//ConfigReader.getTextFilename();
 		
 		// Get the connection from DbConnection
 		

@@ -7,11 +7,6 @@ import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.Session;
 import com.jcraft.jsch.SftpException;
 
-import Utilities.ConfigReader;
-
-import java.sql.Connection;
-import java.util.Vector;
-
 public class sftpConnection {
 
    
@@ -44,6 +39,7 @@ public class sftpConnection {
 
             
             // Uploading file 
+           System.out.println("Uploading file !"+ localFileName+remoteFilePath);
             sftpChannel.put(localFileName,remoteFilePath);
                      
              
