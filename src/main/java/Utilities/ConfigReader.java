@@ -42,7 +42,8 @@ public class ConfigReader {
             Random random= new Random();
             int randomNumber=random.nextInt(1000);
             textFilename = textFileNode.get("filename").asText()+randomNumber+".txt";
-            campaignId = textFileNode.get(campaignId).asInt();
+            campaignId = textFileNode.get("campaignId").asInt();
+            
             JsonNode fileDataNode = textFileNode.get("fileData");
             for (JsonNode recordNode : fileDataNode) {
                 List<String> record = new ArrayList<>();
